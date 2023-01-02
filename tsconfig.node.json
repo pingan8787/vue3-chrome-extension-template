@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true
+  },
+  "extends": "@vue/tsconfig/tsconfig.node.json",
+  "include": [
+    "vite.config.*",
+    "package.json",
+    "vitest.config.*",
+    "cypress.config.*",
+    "src/**/*.ts",
+    "scripts/**/*.ts",
+    "src/**/*.ts",
+    "shims.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "@src/*"
+  ],
+  "paths": {
+    "@src/*": ["src/*"]
+  },
+  "typeRoots": ["node_modules/@types"],
+  "compilerOptions": {
+    "composite": true,
+    "types": ["node"]
+  }
+}

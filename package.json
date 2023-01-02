@@ -1,0 +1,56 @@
+{
+  "name": "vue3-chrome-extension-template",
+  "author": "pingan8787",
+  "version": "0.0.1",
+  "description": "vue3-chrome-extension-template",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pingan8787/vue3-chrome-extension-template.git"
+  },
+  "scripts": {
+    "dev": "nodemon",
+    "build": "cross-env NODE_ENV=production run-s clear build:web build:js build:bg",
+    "build:web": "vite build",
+    "build:bg": "vite build --config vite.config.bg.ts",
+    "build:js": "vite build --config vite.config.content.ts",
+    "type-check": "vue-tsc --noEmit",
+    "clear": "rimraf dist",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@icon-park/vue-next": "^1.4.2",
+    "@types/webextension-polyfill": "^0.9.0",
+    "@vueuse/core": "^9.1.1",
+    "hotkeys-js": "^3.9.5",
+    "mitt": "^3.0.0",
+    "vite-plugin-windicss": "^1.8.7",
+    "vue": "^3.2.37",
+    "webext-bridge": "^5.0.5",
+    "webextension-polyfill": "^0.10.0",
+    "windicss": "^3.5.6"
+  },
+  "engines": {
+    "node": ">= 16.13 <17"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@types/chrome": "^0.0.195",
+    "@types/node": "^16.11.56",
+    "@vitejs/plugin-vue": "^3.0.1",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^11.0.0",
+    "@vue/tsconfig": "^0.1.3",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.21.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "nodemon": "^2.0.19",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.54.8",
+    "typescript": "~4.7.4",
+    "vite": "^3.0.4",
+    "vue-tsc": "^0.39.5"
+  }
+}
