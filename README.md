@@ -1,0 +1,1 @@
+# vue3-chrome-extension-template
