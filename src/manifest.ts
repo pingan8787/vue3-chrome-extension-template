@@ -25,12 +25,12 @@ const manifest: ManifestType = {
     },
   ],
   commands: {
-    "open-omni": {
+    "my-template": {
       "suggested_key": {
         "default": "Ctrl+Shift+Z",
         "mac": "Command+Shift+Z"
       },
-      "description": "Open command menu"
+      "description": "Open my template"
     }
   },
   web_accessible_resources: [
